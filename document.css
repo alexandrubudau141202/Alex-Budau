@@ -1,0 +1,134 @@
+*{
+    margin: 0.5px;
+    padding: 0.5px;
+    z-index: 0;
+}
+body{
+    animation: drop 2.5s ease;
+}
+.hamburger{
+    width: 3.5%;
+    margin-left: 95%;
+    cursor: pointer;
+    margin-top: -20%;
+    animation: drop 3.5s ease;
+}
+.navbar{
+    width: 50%;
+    margin-left: auto;
+}
+.title-p{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -80%;
+    font-size: 28px;
+    align-items: baseline;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-links li:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow: black 5px 5px 5px;
+    text-align: center;
+    opacity: 1;
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+}
+.sec-1{
+    background-image: url(/Users/alexandrubudau/Desktop/apartment-architecture-bookcase-bookshelves-271816.jpg);
+    height: 100vh;
+    margin-top: 0;
+    overflow: hidden;
+}
+.description{
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 4px 4px 4px;
+    text-align: center;
+    margin-top: 20%;
+}
+.house{
+    border: 2px solid rgb(184, 184, 184);
+    width: 20%;
+    margin-left: 40%;
+}
+.apart-text{
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 4px 4px 4px;
+    text-align: center;
+}
+.sec-2{
+    margin-top: 5px;
+    overflow: hidden;
+    height: 100vh;
+    padding: 5px;
+    background-image: url(/Users/alexandrubudau/Desktop/apartment.jpg);
+}
+.ap-desc{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(210, 255, 238);
+    text-shadow: rgb(0, 0, 0) 4px 4px 4px;
+    margin-top: 18%;
+    margin-left: 18%;
+}
+.sec-3{
+    overflow: hidden;
+    height: 110vh;
+}
+.villa{
+    width: 100%;
+}
+.villa-desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin-top: -68%;
+    color: rgb(210, 255, 238);
+    text-shadow: rgb(16, 16, 16) 2px 2px 2px;
+    margin-left: 32%;
+}
+.villa-p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    font-size: 38px;
+    margin-left: 3.5%;
+    margin-top: 50%;
+}
+@media screen and (max-width: 768px){
+    .nav-links{
+        display: grid;
+        color: rgb(0, 0, 0);
+        background-color: beige;
+    }
+    .navbar{
+        background-color: beige;
+        text-shadow: rgb(117, 117, 117) 2px 2px 2px;
+    }
+}
+@keyframes drop{
+    0%{
+        transform: translateY(-80px);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
